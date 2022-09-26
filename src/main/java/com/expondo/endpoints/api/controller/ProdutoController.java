@@ -16,7 +16,8 @@ public class ProdutoController {
     private ProdutoRepository produtoRepository;
     private ProdutoService produtoService;
 
-    /*1º Metodo é pegar o produto e salvar o mesmo no BD*/
+    /*1º Metodo é pegar o produto e salvar o mesmo no BD
+    * 2ºAlisar problema ao persistir BD*/
 
     @PostMapping(value = "/save")
     public ResponseEntity<Produto> salvaProduto(@RequestBody Produto produto){
