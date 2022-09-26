@@ -8,18 +8,18 @@ import java.util.List;
 
 @Service
 public class ProdutoService {
-    //Referenciando Repository que faz interações com nosso BD
+    //Referenciando Repository que faz interações com o nossa BD
     private ProdutoRepository produtoRepository;
 
-    //Criando metodo para salvar em nosso banco de dados.
+    //Criando metodo para salvar no nosso banco de dados.
     public Produto save(Produto produto){
         return produtoRepository.save(produto);
     }
-    //Buscar por di
+    //Buscar por ID
     public Produto findById (Long id){
         return produtoRepository.findById(id).orElse(null);
     }
-    //Lista todos os Produto com findAll.
+    //Lista todinho o Produto com findAll.
     public List<Produto> findAll(){
         return produtoRepository.findAll();
     }

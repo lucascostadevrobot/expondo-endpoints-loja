@@ -13,11 +13,9 @@ import javax.persistence.*;
 public class Produto {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "get_id", nullable = false)
-    private Long getId;
+    private Long id;
 
     //Atributos
-    private Long id;
     private  String nome;
     private Double preco;
     private String descricao;
