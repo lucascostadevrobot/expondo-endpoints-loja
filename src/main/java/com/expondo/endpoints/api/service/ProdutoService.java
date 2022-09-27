@@ -2,6 +2,7 @@ package com.expondo.endpoints.api.service;
 
 import com.expondo.endpoints.api.domain.Produto;
 import com.expondo.endpoints.api.repository.ProdutoRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -9,6 +10,7 @@ import java.util.List;
 @Service
 public class ProdutoService {
     //Referenciando Repository que faz interações com o nossa BD
+    @Autowired
     private ProdutoRepository produtoRepository;
 
     //Criando metodo para salvar no nosso banco de dados.
