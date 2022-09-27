@@ -33,7 +33,7 @@ public class ProdutoController {
     }
 
     //Metodo para deletar via ID
-    @DeleteMapping(value = "{id}")
+    @DeleteMapping(value = "/{id}")
     public ResponseEntity<Produto> deletaProduto(@PathVariable  Long id){
         Produto produto = produtoService.findById(id);
         return ResponseEntity.ok().body(produto);
