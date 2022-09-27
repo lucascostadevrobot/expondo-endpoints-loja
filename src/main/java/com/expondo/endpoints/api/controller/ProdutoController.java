@@ -33,9 +33,9 @@ public class ProdutoController {
     }
 
     //Metodo para deletar via ID
-    @DeleteMapping(value = "/{id}")
-    public ResponseEntity<Produto> deletaProduto(@PathVariable  Long id){
-        Produto produto = produtoService.findById(id);
+    @DeleteMapping(path = "{id}")
+    public ResponseEntity<Produto> deletaProduto(@PathVariable long id){
+        Produto produto = produtoService.deleteById(id);
         return ResponseEntity.ok().body(produto);
     }
 

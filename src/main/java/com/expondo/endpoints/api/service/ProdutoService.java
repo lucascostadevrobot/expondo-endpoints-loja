@@ -26,4 +26,10 @@ public class ProdutoService {
         return produtoRepository.findAll();
     }
 
+    //Service para delete
+    public Produto deleteById(long id){
+        produtoRepository.deleteById(id);
+        return null;
+    }
+
 }
