@@ -1,8 +1,8 @@
-package com.expondo.endpoints.api.controller;
+package com.expondo.endpoints.controller;
 
 
-import com.expondo.endpoints.api.domain.Produto;
-import com.expondo.endpoints.api.service.ProdutoService;
+import com.expondo.endpoints.domain.Produto;
+import com.expondo.endpoints.service.ProdutoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -35,7 +35,7 @@ public class ProdutoController {
     //Metodo para deletar via ID
     @DeleteMapping(path = "{id}")
     public ResponseEntity<Produto> deletaProduto(@PathVariable long id){
-        Produto produto = produtoService.deleteById(id);
+         Produto produto = produtoService.deleteById(id);
         return ResponseEntity.ok().body(produto);
     }
 

@@ -1,7 +1,7 @@
-package com.expondo.endpoints.api.service;
+package com.expondo.endpoints.service;
 
-import com.expondo.endpoints.api.domain.Produto;
-import com.expondo.endpoints.api.repository.ProdutoRepository;
+import com.expondo.endpoints.domain.Produto;
+import com.expondo.endpoints.repository.ProdutoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

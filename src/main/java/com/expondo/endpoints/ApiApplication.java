@@ -1,4 +1,4 @@
-package com.expondo.endpoints.api;
+package com.expondo.endpoints;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

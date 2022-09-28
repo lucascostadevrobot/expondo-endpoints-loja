@@ -1,6 +1,6 @@
-package com.expondo.endpoints.api.repository;
+package com.expondo.endpoints.repository;
 
-import com.expondo.endpoints.api.domain.Produto;
+import com.expondo.endpoints.domain.Produto;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

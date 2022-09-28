@@ -1,4 +1,4 @@
-package com.expondo.endpoints.api.domain;
+package com.expondo.endpoints.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
